@@ -191,11 +191,12 @@
     gap: 5px;
     padding-top: 60px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .slider-container {
-    min-width: 1000px;
-    max-width: 1000px;
+    max-width: 1300px;
     width: 100%;
     height: 450px!important;
     border-radius: 5px;
@@ -249,7 +250,7 @@
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     overflow: hidden;
 }
 
@@ -376,14 +377,94 @@
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+    width: 100%;
+    background-color: var(--bg-color-subtle);
 }
 
 .second-info div img {
     border-radius: 10px;
     box-shadow: var(--box-shadow-primary);
+    max-width: 100%;
 }
 
 .second-info div p {
     color: var(--txt-color);
     text-shadow: var(--box-shadow-txt);
+}
+
+.third-info {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    height: 400px;
+}
+
+.third-info-img-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    min-height: 100px;
+}
+
+.third-info-img-div img {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-primary);
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    height: 100%;
+}
+
+.third-info-div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.third-info-p-div {
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+}
+
+.third-info-p-div p {
+    color: var(--txt-color);
+    text-shadow: var(--box-shadow-txt);
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: var(--bg-color-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.footer-top {
+    width: 38%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+}
+
+.footer-top ul {
+    list-style: none;
+}
+
+.footer-top ul li a {
+    color: var(--txt-color);
+    text-decoration: none;
+}
+
+.footer-top ul li a:hover {
+    color: var(--accent-color-secondary-original);
 }
